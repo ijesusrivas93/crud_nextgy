@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-    	DB::statement("TRUNCATE TABLE {clients} RESTART IDENTITY CASCADE");
+    	DB::statement("TRUNCATE TABLE {$clients} RESTART IDENTITY CASCADE");
 
         $this->call(ClientSeeder::class);
 
