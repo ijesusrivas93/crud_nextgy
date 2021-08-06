@@ -15,7 +15,7 @@ class ClientSeeder extends Seeder
      */
     public function run()
     {
-         Client::truncate();
+        Client::truncate();
 
         $client = new Client;
     	$client -> name = "Jesús Rivas";
